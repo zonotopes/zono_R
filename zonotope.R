@@ -129,9 +129,8 @@ zonotope <- function(star, computeAdditionalStatistics) {
     counters   <- aux$counters # rimettere sopra questo assegnamento!!!
   
   } # while (1)
-
-  volume <- volume / (factorial(dim) / 2)
-  # they are all N dimensional cones. (2, because we are computing half the faces, now)
+  
+  volume <- volume / dim
 
   # Stop the clock
   etime <- proc.time() - ptm
